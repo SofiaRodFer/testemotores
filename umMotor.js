@@ -201,7 +201,6 @@ const atualizarDados = () => {
     spanTensaoNoMotor.innerHTML = `${tensaoNoMotor[0].toFixed(2)}<${tensaoNoMotor[1].toFixed(2)}° V`;
     spanCorrenteNoMotor.innerHTML = `${correnteNoMotor[0].toFixed(2)}<${correnteNoMotor[1].toFixed(2)}° A`;
     spanPotenciaDoMotor.innerHTML = `${potenciaAparenteDoMotor[0].toFixed(2)}<${potenciaAparenteDoMotor[1].toFixed(2)}° VA`;
-    spanPotenciaReativaDoMotor.innerHTML = `${potenciaReativaDoMotor.toFixed(2)} VAr`;
-    spanPotenciaAparenteCorrigida.innerHTML = `${potenciaAparenteCorrigida[0].toFixed(2)}<${potenciaAparenteCorrigida[1].toFixed(2)} VA`;
     spanPotenciaReativaDoCapacitor.innerHTML = `${potenciaReativaDoCapacitor.toFixed(2)} VAr`;
+    spanPotenciaAparenteCorrigida.innerHTML = `${potenciaAparenteCorrigida[0].toFixed(2)}<${potenciaAparenteCorrigida[1].toFixed(2)} VA`;
 }

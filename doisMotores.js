@@ -245,7 +245,6 @@ const atualizarDados = () => {
     const potenciaAparenteDoMotor1 = calcularPotenciaAparenteDoMotor(impedanciaMotor1);
     const potenciaAparenteDoMotor2 = calcularPotenciaAparenteDoMotor(impedanciaMotor2);
     const potenciaAparenteTotalDosMotores = calcularPotenciaAparenteTotalDosMotores();
-    const potenciaReativaDosMotores = calcularPotenciaReativaDosMotores();
     const potenciaAparenteCorrigida = calcularPotenciaAparenteCorrigidaDosMotores();
     const potenciaReativaDoCapacitor = calcularPotenciaReativaDoCapacitor();
 
@@ -259,7 +258,6 @@ const atualizarDados = () => {
     spanPotenciaDoMotor1.innerHTML = `${potenciaAparenteDoMotor1[0].toFixed(2)}<${potenciaAparenteDoMotor1[1].toFixed(2)}° VA`;
     spanPotenciaDoMotor2.innerHTML = `${potenciaAparenteDoMotor2[0].toFixed(2)}<${potenciaAparenteDoMotor2[1].toFixed(2)}° VA`;
     spanPotenciaAparenteTotal.innerHTML = `${potenciaAparenteTotalDosMotores[0].toFixed(2)}<${potenciaAparenteTotalDosMotores[1].toFixed(2)}° VA`
-    spanPotenciaReativaDosMotores.innerHTML = `${potenciaReativaDosMotores.toFixed(2)} VAr`;
-    spanPotenciaAparenteCorrigida.innerHTML = `${potenciaAparenteCorrigida[0].toFixed(2)}<${potenciaAparenteCorrigida[1].toFixed(2)} VA`;
     spanPotenciaReativaDoCapacitor.innerHTML = `${potenciaReativaDoCapacitor.toFixed(2)} VAr`;
+    spanPotenciaAparenteCorrigida.innerHTML = `${potenciaAparenteCorrigida[0].toFixed(2)}<${potenciaAparenteCorrigida[1].toFixed(2)} VA`;
 }
