@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Três motores</title>
+</head>
+<body>
+    <div class="container-motores">
+        <section class="sec-1">
+            <h2 class="titulo-motores">Três motores</h2>
+            <p class="instrucoes">
+                Utilize o padrão: 23.02&lt;09.67 (separando os decimais com ponto final, sem espaços, sem °)
+            </p>
+            <div class="dados">
+                <label for="tensao-fonte">
+                    Tensão fonte:
+                    <input type="text" name="tensao-fonte" id="tensao-fonte">
+                </label>
+
+                <label for="impedancia-motor-1">
+                    Impedância motor 1:
+                    <input type="text" name="impedancia-motor-1" id="impedancia-motor-1">
+                </label>
+
+                <label for="impedancia-motor-2">
+                    Impedância motor 2:
+                    <input type="text" name="impedancia-motor-2" id="impedancia-motor-2">
+                </label>
+
+                <label for="impedancia-motor-3">
+                    Impedância motor 3:
+                    <input type="text" name="impedancia-motor-3" id="impedancia-motor-3">
+                </label>
+
+                <label for="impedancia-cabo">
+                    Impedância cabo:
+                    <input type="text" name="impedancia-cabo" id="impedancia-cabo">
+                </label>
+
+                <label for="fp-para-correcao">
+                    FP p/ correção:
+                    <input type="text" name="fp-para-correcao" id="fp-para-correcao">
+                </label>
+            </div>
+            <a href="index.html" class="voltar">Voltar ao início</a>
+        </section>
+
+        <section class="sec-2">
+            <p>Impedância equivalente dos motores: <span class="impedanciaEquivalente"></span></p>
+            <p>Impedância total: <span class="impedanciaTotal"></span></p>
+            <p>Corrente total: <span class="correnteTotal"></span></p>
+            <p>Tensão no cabo: <span class="tensaoNoCabo"></span></p>
+            <p>Tensão nos motores: <span class="tensaoNosMotores"></span></p>
+            <p>Corrente no motor 1: <span class="correnteNoMotor1"></span></p>
+            <p>Corrente no motor 2: <span class="correnteNoMotor2"></span></p>
+            <p>Corrente no motor 3: <span class="correnteNoMotor3"></span></p>
+            <p>Potência do motor 1: <span class="potenciaDoMotor1"></span></p>
+            <p>Potência do motor 2: <span class="potenciaDoMotor2"></span></p>
+            <p>Potência do motor 3: <span class="potenciaDoMotor3"></span></p>
+            <p>Potência aparente total: <span class="potenciaAparenteTotal"></span></p>
+            <p>Potência reativa dos motores: <span class="potenciaReativaDosMotores"></span></p>
+            <p>Potência aparente pós correção (FP): <span class="potenciaAparenteCorrigida"></span></p>
+            <p>Potência reativa do capacitor: <span class="potenciaReativaDoCapacitor"></span></p>
+        </section>
+    </div>
+    <script src="tresMotores.js"></script>
+</body>
+</html>
